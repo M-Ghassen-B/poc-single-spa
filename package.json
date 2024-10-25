@@ -1,0 +1,19 @@
+{
+  "name": "micro-frontends",
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "webpack serve",
+    "build:react":"cd mfe-react && webpack",
+    "build:ajs":"cd angularjs && webpack",
+    "build:parent":"webpack",
+    "build": "npm run build:react & npm run build:ajs & npm run build:parent"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "single-spa": "^6.0.3",
+    "webpack": "^5.95.0"
+  }
+}

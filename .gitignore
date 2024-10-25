@@ -1,0 +1,5 @@
+node_modules/
+mfe-react/node_modules
+angularjs/node_modules
+dist/*
+!dist/index.html
